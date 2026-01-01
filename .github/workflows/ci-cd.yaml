@@ -15,9 +15,5 @@ jobs:
           node-version: 16
       - name: Install dependency
         run: npm install
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to production
-        run: npm run deploy
+        run: npm run
